@@ -1,3 +1,2 @@
 #!/bin/sh
-F="-I +unix -strict-sequence -w +a-4-9-40-41-42-44-45-70 -warn-error +a"
-ocamlopt $F unix.cmxa te.ml -o te && ocamlopt $F unix.cmxa te.ml test.ml -o test && ./test
+lua test.lua
