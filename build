@@ -1,0 +1,3 @@
+#!/bin/sh
+F="-std=c99 -Wall -Wextra -Werror -pedantic -fsanitize=address,undefined -fno-omit-frame-pointer"
+cc $F rope.c test_rope.c -o test_rope && cc $F -DED_NOMAIN rope.c editor.c test_editor.c -o test_editor && cc $F rope.c editor.c -o te
