@@ -1,0 +1,3 @@
+#!/bin/sh
+d=$(dirname "$0")
+TE_FILE="$1" exec gforth "$d/editor.fs" -e main
